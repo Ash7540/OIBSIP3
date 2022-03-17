@@ -1,0 +1,121 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background: url("images/d.jpg");
+    margin: auto;
+    color: aliceblue;
+}
+header{
+    padding: 0rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+header h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: rgb(255, 225, 225);
+    margin-bottom: 1rem;
+}
+
+#new-task-form{
+    display: flex;
+}
+input,button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-input{
+    flex:  1 1 0%;
+    background-color: darkgray;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: bisque;
+    font-size: 1.5rem;
+}
+#new-task-input::placeholder{
+    color: whitesmoke;
+}
+#new-task-submit{
+    color: blanchedalmond;
+    font-size: 1.25rem;
+    font-weight: 850;
+    background-color: rgb(116, 233, 233);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.5sec;
+}
+#new-task-submit:hover{
+    opacity: 0.8;
+}
+#new-task-submit:active{
+    opacity: 0.6;
+}
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.task-list{
+    padding: 1rem;
+}
+.task-list h2{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: rgb(255, 207, 167);
+    margin-bottom: 1rem;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(100, 100, 100);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;     
+}
+.content{
+    flex: 1 1 0%;
+}
+.text{
+    color: beige;
+    font-size: 1.12rem;
+    font-weight: 500;
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+}
+.text:not(:read-only){
+    color: rgb(255, 99, 9);
+}
+.actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: rgb(148, 225, 255);
+}
+
+.actions button:hover{
+    opacity: 0.8;
+}
+.actions button:active{
+    opacity: 0.6;
+}
+.edit{
+    background-image: linear-gradient(to right, rgb(255, 254, 254),rgb(255, 51, 51));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
